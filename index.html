@@ -2,9 +2,89 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <title>Modulo de inscripciones</title>
   </head>
   <body>
+
+    <form  method="POST">
+      <div>
+        <label>
+          Ingrese su Nombre de Usuario:
+          <input id="username" type="text" name="username">
+        </label>
+      </div>
+
+       <div>
+        <label>
+          Ingrese su contraseña:
+          <input id="password" type="passwword" name="passw">
+        </label>
+      </div>
+
+      <div>
+          <label >
+                Ingresar su correo:
+                <input  id="email" name="email" type="email" required>
+          </label>
+      </div>
+
+
+      <div>
+        <label for="country">Escoge tu forma identificación</label>
+          <select name="identificador" id="identificadores">
+            <optgroup label="Forma de identificación">
+                <option value="1">Codigo</option>
+                <option value="2">Carnet</option>
+                <option value="4">Carnet de extranjeria</option>
+
+                <input type="text"  name="identificador" id="identificador" >
+                </optgroup>
+      </div>
+
+      <div >
+        <label id="date" >
+            Ingresar su fecha de nacimiento
+            <input name="fecha" id="fecha" type="date">
+        </label>
+      </div>
+
+      <div>
+        <label>
+            <input type="radio" name="gender"> Male
+        </label>
+
+        <label>
+            <input type="radio" name="gender"> Female
+        </label>
+
+        <label>
+            <input type="radio" name="gender"> Otros
+        </label>
+      </div>
+
+      <input id="boton" type="submit" value="Registrar" id="regi">
+
+    </form>
+
+    <!-- <form  method="post">
+      <div >
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" required>
+      </div>
+
+      <div>
+        <input type="submit">
+      </div>
+
+    </form> -->
+
+
 
   </body>
 </html>

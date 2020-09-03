@@ -1,0 +1,42 @@
+*
+{
+      margin:0;
+      padding:0;
+
+}
+body
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,208,116,1) 36%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+div
+{
+    margin: 50px;
+    text-align: center;
+}
+
+#campos
+{
+    margin-left: 650px;
+    margin-bottom: 60px;
+    height: 60px;
+    width: 200px;
+}
+
+#date
+{
+    margin-left: 650px;
+}
+
+#regi
+{
+    margin-left: 700px;
+    padding: 50px;
+}
+
+input
+{
+    padding: 10px;
+}
