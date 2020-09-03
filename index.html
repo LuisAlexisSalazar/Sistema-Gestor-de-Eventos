@@ -2,89 +2,76 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Modulo de inscripciones</title>
   </head>
   <body>
 
-    <form  method="POST">
+  <div id="main">
+    <h1>Inscripción</h1>
+    <form action="" method="post">
       <div>
-        <label>
-          Ingrese su Nombre de Usuario:
-          <input id="username" type="text" name="username">
-        </label>
-      </div>
-
-       <div>
-        <label>
-          Ingrese su contraseña:
-          <input id="password" type="passwword" name="passw">
+        <label class="formu">
+                 Ingrese su Nombre de Usuario:
+                 <input id="username" type="text" name="usern">
         </label>
       </div>
 
       <div>
-          <label >
+        <label class="formu">
+                 Ingrese su contraseña:
+                 <input id="password" type="passwword" name="passw">
+        </label>
+      </div>
+
+      <div>
+          <label class="formu">
                 Ingresar su correo:
-                <input  id="email" name="email" type="email" required>
+                <input type="email" name="correoElectronico" required>
           </label>
       </div>
 
 
       <div>
-        <label for="country">Escoge tu forma identificación</label>
-          <select name="identificador" id="identificadores">
-            <optgroup label="Forma de identificación">
-                <option value="1">Codigo</option>
-                <option value="2">Carnet</option>
-                <option value="4">Carnet de extranjeria</option>
+        <label for="country" class="formu">Escoge tu forma identificación:  </label>
+            <select name="identificador" id="identificadores">
 
-                <input type="text"  name="identificador" id="identificador" >
+                <optgroup label="Forma de identificación">
+                    <option value="1">Codigo</option>
+                    <option value="2">Carnet</option>
+                    <option value="3">Carnet de extranjeria</option>
+                    <input type="text" name="codigo" id="identificadores" >
                 </optgroup>
       </div>
 
-      <div >
-        <label id="date" >
-            Ingresar su fecha de nacimiento
-            <input name="fecha" id="fecha" type="date">
-        </label>
-      </div>
 
-      <div>
-        <label>
-            <input type="radio" name="gender"> Male
+      <fieldset id="campos">
+            <legend>Tu Género</legend>
+                <label>
+                    <input type="radio" value="1" name="gender"> Male
+                </label>
+
+                <label>
+                    <input type="radio" value="2" name="gender"> Female
+                </label>
+
+                <label>
+                    <input type="radio" value="3" name="gender" > Otros
+                </label>
+        </fieldset>
+
+
+        <label class="formu">
+                 Ingresar su fecha de nacimiento:
+                <input name="fechaNacimiento" type="date">
         </label>
 
-        <label>
-            <input type="radio" name="gender"> Female
-        </label>
 
-        <label>
-            <input type="radio" name="gender"> Otros
-        </label>
-      </div>
-
-      <input id="boton" type="submit" value="Registrar" id="regi">
+        <input id="boton" type="submit" value="Registrar">
 
     </form>
-
-    <!-- <form  method="post">
-      <div >
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" required>
-      </div>
-
-      <div>
-        <label for="email">Email</label>
-        <input type="text" name="email" required>
-      </div>
-
-      <div>
-        <input type="submit">
-      </div>
-
-    </form> -->
-
-
+  </div>
+    <script src="script.js" charset="utf-8"></script>
 
   </body>
 </html>
